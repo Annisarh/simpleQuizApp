@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ handleReset }) => {
   return (
     <div className="bg-primary w-full text-center lg:flex lg:justify-between px-2 lg:px-[73px] py-1 lg:py-[9px] text-white lg:h-[88px]">
       <div className="flex justify-between">
@@ -10,7 +10,7 @@ const Footer = () => {
             width="35"
             height="35"
             viewBox="0 0 24 24"
-            className="lg: w-[50px] lg:h-[50px]"
+            className="lg: w-[50px] lg:h-[50px] cursor-pointer"
           >
             <path
               fill="currentColor"
@@ -26,7 +26,8 @@ const Footer = () => {
             width="35"
             height="35"
             viewBox="0 0 24 24"
-            className="lg: w-[50px] lg:h-[50px]"
+            className="lg: w-[50px] lg:h-[50px] cursor-pointer"
+            onClick={handleReset}
           >
             <path
               fill="currentColor"
